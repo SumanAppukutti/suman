@@ -8,10 +8,6 @@ void main()
     {
         printf("given alp is vowel");
     }
-    //else if(alp>0 && alp<9)
-    //{
-      //  printf("given alp is invalid or number");
-    //}
     else
     {
         printf("given alp is constant");
