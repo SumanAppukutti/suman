@@ -8,22 +8,22 @@ void main()
  {
      if(num1>num3)
      {
-         printf("num1 is big%d",num1);
+         printf("num1 is big %d",num1);
      }
      else
      {
-         printf("num3 is big%d",num3);
+         printf("num3 is big %d",num3);
      }
  }
  else
  {
      if(num2>num3)
      {
-         printf("num2 is big%d",num2);
+         printf("num2 is big %d",num2);
      }
      else
      {
-         printf("num3 is big%d",num3);
+         printf("num3 is big %d",num3);
      }
      
  }
