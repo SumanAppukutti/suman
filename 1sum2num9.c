@@ -11,9 +11,10 @@ void main()
     }
     printf("enter the value to add");
     scanf("%d",&k);
-    for(j=a[k];j>=a[0];k--)
+    for(j=0;j<k;j++)
     {
-        sum=sum+j;
+        sum=sum+a[j];
     }
+    printf("%d",sum);
     getch();
 }
