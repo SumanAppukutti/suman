@@ -2,7 +2,7 @@
 #include<conio.h>
 void main()
 {
-int a,b,i,c,count=0,rem,mul=1,sum=1;
+int a,b,i,c,count=0,rem,mul=1,sum=1,j;
 printf("enter the value");
 scanf("%d",&a);
 b=a;
@@ -22,6 +22,8 @@ mul=mul*rem;
 }
 sum=sum*10+mul;
 b=b/10;
+mul=1;
+rem=0;
 }
 if(c==sum)
 {
@@ -33,6 +35,3 @@ printf("not armstrong");
 }
 getch();
 }
-
-
-
