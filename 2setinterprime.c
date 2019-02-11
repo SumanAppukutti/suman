@@ -2,16 +2,24 @@
 #include<conio.h>
 void main()
 {
-int a,b,i;
-printf("enter the intervels");
-scanf("%d %d",&a,&b);
-for(i=a;i<=b;i++)
+int a,b,flag,i;
+printf("enter the 2 limits");
+scanf("%d%d",&a,&b);
+while(a<b)
 {
-for(j=2;j<=a/2;j++)
+flag=0;
+for(i=2;i<a/2;i++)
 {
-if(i%j==0)
+if(a%i==0)
 {
-printf("%d",i);
+flag=1;
+break;
+}
+}
+if(flag==0)
+{
+printf("%d",a);
+++a;
 }
 }
 }
