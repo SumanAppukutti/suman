@@ -2,26 +2,23 @@
 #include<conio.h>
 void main()
 {
-int b[100],a,i,c,j;
-printf("enter the size of the array");
-scanf("%d",&a);
-printf("enter the element");
-for(i=0;i<a;i++)
+int a[50],i,n,max;
+printf("enter the range");
+scanf("%d",&n);
+printf("enter the array values");
+for(i=0;i<n;i++)
 {
-    scanf("%d",&b[i]);
+scanf("%d",&a[i]);
 }
-for(i=0;i<a;i++)
+max=a[0];
+for(i=0;i<n;i++)
 {
-    for(j=i+1;j<=a;j++)
-    {
-        if(b[i]>b[j])
-        {
-            c=b[i];
-            b[i]=b[j];
-            b[j]=c;
-        }
-    }
+if(a[i]>max)
+{
+max=a[i];
 }
-printf("%d",b[i]);
+}
+printf("%d",max);
+}
 getch();
 }
