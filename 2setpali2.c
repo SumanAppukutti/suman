@@ -1,24 +1,24 @@
 #include<stdio.h>
-#include<conio.h>
 void main()
 {
-int a,b,sum=1;
-printf("enter the num");
-scanf("%d",&a);
-b=a;
-while(a!=0)
+int n,temp=0,n1,c;
+
+printf("enter the number");
+scanf("%d",&n);
+c=n;
+while(n>0)
 {
-rem=a%10;
-sum=sum*10+rem;
-a=a/10;
+n1=n%10;
+temp=temp*10+n1;
+n=n/10;
+printf("%d\n",temp);
 }
-if(sum==b)
+if(temp==c)
 {
-printf("palindrom");
+    printf("\npalindrome");
 }
 else
 {
-printf("not palindrom");
+    printf("not a palindrome");
 }
-getch();
 }
