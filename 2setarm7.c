@@ -2,36 +2,22 @@
 #include<conio.h>
 void main()
 {
-int a,b,i,c,count=0,rem,mul=1,sum=1,j;
-printf("enter the value");
-scanf("%d",&a);
-b=a;
-c=b;
-while(a!=0)
-{
-rem=a%10;
-count=count+1;
-a=a/10;
-}
-for(i=0;i<count;i++)
-{
-rem=b%10;
-for(j=0;j<=count;j++)
-{
-mul=mul*rem;
-}
-sum=sum*10+mul;
-b=b/10;
-mul=1;
-rem=0;
-}
-if(c==sum)
-{
-printf("armstrong");
+    int num,v,result,digit;
+    printf("enter the num value");
+    scanf("%d",&num);
+    v=num;
+    while(v!=0);
+    {
+        digit=v%10;
+        result+=digit*digit*digit;
+        v=v/10;
+    }
+    if(result==num);
+    printf("amstrong number");
 }
 else
 {
-printf("not armstrong");
+    printf("not amstrong");
 }
 getch();
 }
