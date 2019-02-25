@@ -3,7 +3,8 @@
 #include<conio.h>
 void main()
 {
-    int i,a[100],n=3;
+    int i,n=3;
+    char a[100];
     printf("enter the str");
     scanf("%s",a);
     printf("%c",a[0]);
